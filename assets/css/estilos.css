@@ -66,14 +66,14 @@ nav > a:hover {
 
 .container-video-apresenta{
     padding: 90px;
-    height: 90vh;
+    height: 40vh;
 }
 
 .apresenta {
     float: center;
     margin: 0px auto;
     background-color: white;
-    background-image: url(./assets/img/tela-video.jpg);
+    /* background-image: url(./assets/img/tela-video.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     width: 50%;
@@ -81,7 +81,7 @@ nav > a:hover {
     padding: 60px;
     border-radius: 10px;
     text-align: center;
-    border: solid red;
+    border: solid green;
 }
 
 .container-video-apresenta h1{
@@ -90,7 +90,7 @@ nav > a:hover {
 
 
 /* socials */
-section {
+#servico {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
@@ -101,7 +101,7 @@ section {
     color: white;
 }
 
-section > div {
+#servico > div {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -113,12 +113,12 @@ section > div {
     border: solid red;
 }
 
-section > h1{
+#servico > h1{
     text-align: center;
     background-color: black;
 }
 
-section > div > img {
+#servico > div > img {
     width: 25vh;
 }
 

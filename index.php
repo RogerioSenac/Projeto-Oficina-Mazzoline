@@ -36,7 +36,7 @@
         </article>
     </section>
 
-    <section>
+    <section id=servico>
         <div class="social">
             <img src="./assets/img/foto_1.jpg" alt="foto_1">
         </div>
