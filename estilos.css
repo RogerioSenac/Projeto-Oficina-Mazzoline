@@ -65,9 +65,9 @@ nav > a:hover {
 }
 
 .container-video-apresenta{
-    padding: 60px;
+    padding: 90px;
+    height: 90vh;
 }
-
 
 .apresenta {
     float: center;
@@ -76,11 +76,12 @@ nav > a:hover {
     background-image: url(./assets/img/tela-video.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 45%;
-    /* padding: 60px; */
+    width: 50%;
+    height: 100vh;
+    padding: 60px;
     border-radius: 10px;
     text-align: center;
-    /* border: solid red; */
+    border: solid red;
 }
 
 .container-video-apresenta h1{

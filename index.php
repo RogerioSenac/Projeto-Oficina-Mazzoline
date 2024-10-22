@@ -29,7 +29,7 @@
     <section class="container-video-apresenta">
         <article class="apresenta">
             <h1>Prazer, somos a Mecânica Mazzoline!</h1>
-            <video id="meuVideo" width="440" height="260" controls autoplay muted>
+            <video id="meuVideo" width="240" height="260" controls autoplay muted>
                 <source src="./assets/video/video_01.mp4" type="video/mp4">
                 Seu navegador não suporta o elemento de vídeo.
             </video>
