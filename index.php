@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oficina Mazzoline</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="./assets/css/estilos.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -26,16 +26,7 @@
         </nav>
     </header>
 
-    <section class="container-video-apresenta">
-        <article class="apresenta">
-            <h1>Prazer, somos a Mecânica Mazzoline!</h1>
-            <video id="meuVideo" width="240" height="260" controls autoplay muted>
-                <source src="./assets/video/video_01.mp4" type="video/mp4">
-                Seu navegador não suporta o elemento de vídeo.
-            </video>
-        </article>
-    </section>
-
+ 
     <section id=servico>
         <div class="social">
             <img src="./assets/img/foto_1.jpg" alt="foto_1">
@@ -62,6 +53,10 @@
             </div>
         </div> <!-- Fechamento da div content -->
     </section>
+
+    <?php
+        include("./includes/footer.php")
+    ?>
 
 
     <script>
