@@ -1,158 +1,244 @@
-/* nav */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
-    height: 100vh;
+@import url(https://use.fontawesome.com/releases/v6.4.2/css/all.css);
+
+/************************ Estrutura básica ******************************/
+* {
+    margin: o;
+    padding: o;
 }
 
-header {
-    background-color: black;
-    /* border: solid red; */
+body {
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 20px 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
 }
 
-.container-logo {
+h1 {
+    color: #fff;
+}
+
+/**************************** Cabeçalho (Menu) ******************/
+header {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10vh;
+    /* Altura do cabeçalho */
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+
+}
+
+
+.nav_bar {
+    /* background-image: url('../imagem/piscina.jpg'); */
+    background: url('../imagem/piscina.jpg') no-repeat center center/cover;
+    /* background-color: #77B5C6; */
+
+}
+
+.navbar-brand .img-fluid {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%; /* Garante que a logo ocupe toda a largura */
     position: relative;
+    margin-left: 20px;
+    /* border-radius: 50%; */
 }
 
-.container-logo img {
-    position: absolute;
-    left: 20px; /* A imagem ficará à esquerda */
-    max-height: 100px; /* Ajuste conforme o tamanho desejado */
-    margin-bottom: 10px;
+.navbar-nav {
+    border: 3px solid rgba(255, 255, 255, 0.11);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    /* Suaviza a transição */
 }
 
-.escrita_logo {
-    color: white;
-    font-size: 40px;
-    text-align: center;
-    width: 100%;
-}
-
-/* Navegação */
-nav {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    background-color: rgb(19, 22, 31);
-    height: 20%;
-    width: 100%;
-    margin-top: 30px;
-}
-
-nav a {
+.navbar-nav a {
+    position: relative;
     text-decoration: none;
-    border: 1px solid rgb(73, 73, 73);
-    border-radius: 50px;
-    padding: 10px 60px;
     color: white;
+    /* Altere a cor conforme necessário */
 }
 
-nav > a:hover {
-    text-decoration: underline;
-    background-color: rgb(72, 72, 78);
+.navbar-nav a::after {
+    content: '';
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    /* Reflexo */
+    transform: translateY(100%);
+    /* Começa fora de vista */
+    transition: transform 0.3s ease;
+    /* Suaviza a transição do reflexo */
 }
 
-.container-video-apresenta{
-    padding: 90px;
-    height: 40vh;
+.navbar-nav a:hover::after {
+    transform: translateY(0);
+    /* Move para a posição original no hover */
+}
+
+.container-video-apresenta {
+    background-color: black;
+    overflow: auto;
+    text-align: center;
 }
 
 .apresenta {
     float: center;
     margin: 0px auto;
     background-color: white;
-    /* background-image: url(./assets/img/tela-video.jpg); */
+    background-image: url(../imagem/tela-video.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 50%;
-    height: 100vh;
+    width: 65%;
     padding: 60px;
     border-radius: 10px;
     text-align: center;
-    border: solid green;
 }
 
-.container-video-apresenta h1{
+
+.container-video-apresenta h1 {
+    color: white;
     text-align: center;
+    padding: 20px;
+
 }
 
-
-/* socials */
-#servico {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: stretch;
-    gap: 20px;
-    height: 50%;
-    background-color: rgb(14, 15, 17);
+#meuvideo {
+    justify-content: center;
+    width: 10px;
+    height: 10px;
+    background-color: green;
     color: white;
 }
 
-#servico > div {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    background-color: rgb(43, 45, 49);
-    padding: 30px;
-    border: 1px solid rgb(104, 104, 104);
+.container-video-natacao_baby {
+    background-color: black;
+    overflow: auto;
+    text-align: center;
+}
+
+.baby {
+    float: center;
+    margin: 0px auto;
+    background-color: white;
+    background-image: url(../imagem/tela-video.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 55%;
+    padding: 80px;
     border-radius: 10px;
-    margin: 50px 0px;
+    text-align: center;
+}
+
+/* container Pagina Sobre Nós */
+
+.container-quem-somos {
+    background-color: white;
+}
+
+.container-quem-somos .servico-texto-realce {
+    color: #D43F38;
+    font-weight: bold;
+}
+
+.container-quem-somos .servico {
+    float: center;
+    margin: 60px auto;
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container-quem-somos .servico .icones {
+    margin-bottom: 10px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.container-quem-somos .servico-texto {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: black;
+    text-align: justify;
+    /* Alinha o texto pelo modo Justificado */
+    line-height: 1.6;
+    /* Opicional: melhora a legibilidade */
+
+}
+
+.container-quem-somos .servico-texto-realce {
+    color: #D43F38;
+    font-weight: bold;
+}
+
+/* container serviço*/
+.container-servico {
+    background-color: #082946;
+    padding: 80px;
+    text-align: center;
     /* border: solid red; */
 }
 
-#servico > h1{
+.servico-texto {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: rgb(7, 7, 7);
     text-align: center;
-    background-color: black;
+    /* Alinha o texto pelo modo Justificado */
+    line-height: 1.6;
+    /* Opicional: melhora a legibilidade */
+    /* border: solid yellow; */
 }
 
-#servico > div > img {
-    width: 25vh;
-}
-
-/* section > div > p {
-    margin-top: 40px;
-    color: lightgray;
+/* .servico ul a {
+    color: white;
+    text-decoration: none;
+    align-content: center;
+    border: solid green;
 } */
 
-/* footer */
-footer {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
+.botoes-servico {
+    padding: 60px;
+    text-align: center;
 }
 
-footer > div {
-    color: rgb(0, 153, 255);
-    font-size: 32px;
-    font-weight: bold;
-    margin-top: 50px;
+.col-4 img {
+    width: 50px; /* Largura da imagem */
+    height: 50px; /* Altura da imagem */
 }
 
-footer > p {
-    color: gray;
-    font-size: 12px;
-    margin-top: 50px;
+.col-4 a {
+    display: inline-block; /* Para que o padding funcione */
+    text-decoration: none; /* Remove o sublinhado */
+    background-color: #008eb9; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    margin: 5px auto; /* Margem para separar os botões */
+    border-radius: 10px; /* Bordas arredondadas */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
 }
 
+.col-4 a:hover {
+    background-color: white; /* Cor de fundo no hover */
+    color: black; /* Cor do texto no hover */
+}
 
 /************* Seção: Mapa *******************/
 #mapa {
-    background-image: url('./assets/img/gps_smartPhone375x250.jpg');
+    background-image: url('../imagem/gps_smartPhone375x250.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -163,7 +249,6 @@ footer > p {
     justify-content: center;
     color: white;
     position: relative;
-    background-color: rgb(14, 15, 17);
 }
 
 #mapa .content {
@@ -176,7 +261,7 @@ footer > p {
 }
 
 #mapa::before {
-    content: none;
+    content: '';
     position: absolute;
     top: 10px;
     left: 0;
@@ -198,27 +283,12 @@ footer > p {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: White;
+    color: black;
     position: relative;
-    background-color: black;
+    background-color: #008eb9;
     margin-top: 10px;
     z-index: 0;
-    border: red solid;
-}
-
-.card-group {
-    display: flex;  /* Espaço entre os cards */
-    justify-content: space-between; /* Cada card ocupa a mesma largura */
-    flex: 1;
-    backdrop-filter: blur(10px); /* Efeito de desfoque */
-    transition: transform 0.3s; /*Efeito de transição suave*/
-    margin: 10px; /* Margem horizontal para espaçamento */
-    margin-left: 20px;
-}
-
-.card-group:hover {
-    transform: scale(1.05);
-    /* Aumenta o tamanho ao passar o mouse */
+    /* border: red solid; */
 }
 
 .card-body-1 {
@@ -231,7 +301,7 @@ footer > p {
 
 .card-body-1 h3 {
     text-align: center;
-    color: white;
+    color: black;
 }
 
 .card-body-1 li {
@@ -255,12 +325,12 @@ footer > p {
 
 .card-body-3 h3{
     text-align: center;
-    color: White;
+    color: black;
 }
 
 .servico-texto-realce{
     text-align: center;
-    color: White;
+    color: black;
     font-weight: 500 bold;
     font-style: italic;
     font-family: cursive;
@@ -269,6 +339,22 @@ footer > p {
 .card-body-3 p{
     text-align: center;
     color: white;
+}
+
+
+.card-group {
+    display: flex;  /* Espaço entre os cards */
+    justify-content: space-between; /* Cada card ocupa a mesma largura */
+    flex: 1;
+    backdrop-filter: blur(10px); /* Efeito de desfoque */
+    transition: transform 0.3s; /*Efeito de transição suave*/
+    margin: 10px; /* Margem horizontal para espaçamento */
+    margin-left: 20px;
+}
+
+.card-group:hover {
+    transform: scale(1.05);
+    /* Aumenta o tamanho ao passar o mouse */
 }
 
 /* Ícones das redes sociais */
