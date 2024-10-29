@@ -49,4 +49,6 @@ inscr_estadualFornecedor varchar(15)
 );
 
 
+
+
  
