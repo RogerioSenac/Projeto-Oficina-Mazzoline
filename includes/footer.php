@@ -18,7 +18,7 @@
     <footer class="rodape">
         <div class="card-group">
             <div class="card-body-1">
-                <h3>Venha nos visitar.</h3>
+                <h3 class="text-center">Venha nos visitar.</h3>
                 <ul>
                     <li><i class="fas fa-map-marker-alt"></i> Rua Pernambuco, 158</br> Jardim Central, Jacupiranga, SP</li>
                     <li><i class="fas fa-envelope"></i> oficinamazzoline@gmail.com</li>
@@ -29,7 +29,7 @@
                 <h3 class="text-center">Horários da Funcionamento</h3>
                 <div class="row text-center">
                     <div class="col">
-                        <p><span class="servico-texto-realce">SEGUNDA À SEXTA</span><br>
+                        <p><span class="servico-texto-realce">SEGUNDA <abr>À<br> SEXTA</span><br>
                             08:00 às 12:00<br>
                             13:00 às 19:00</p>
                     </div>
@@ -45,7 +45,7 @@
             </div>
 
             <div class="card-body-2">
-                <h3>Siga-nos nas redes sociais</h3>
+                <h3 class="text-center">Siga-nos nas redes sociais</h3>
                 <div class="social-icons">
                     <a href="https://www.facebook.com/mecanicamazzoline?locale=pt_BR" class="facebook" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
                     <a href="https://www.instagram.com/mecanicamazzoline/" class="instagram" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
