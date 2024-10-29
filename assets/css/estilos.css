@@ -101,13 +101,13 @@ nav>a:hover {
 /* container serviço*/
 .container-servico {
     background-color: #272727;
-    padding: 80px;
+    padding: 60px;
     text-align: center;
 }
 
 .servico-texto {
     font-family: 'Courier New', Courier, monospace;
-    margin-top: 20px;
+    margin-top: 50px;
     font-size: 1.2em;
     color: white;
     text-align: center;
@@ -139,29 +139,6 @@ nav>a:hover {
     border: 1px solid #ccc;
     z-index: 1000;
 }
-
-/* footer */
-footer {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-}
-
-footer>div {
-    color: rgb(0, 153, 255);
-    font-size: 32px;
-    font-weight: bold;
-    margin-top: 50px;
-}
-
-footer>p {
-    color: gray;
-    font-size: 12px;
-    margin-top: 50px;
-}
-
 
 /************* Seção: Mapa *******************/
 #mapa {
@@ -201,16 +178,21 @@ footer>p {
 
 /****************** Footer ****************/
 
-/* Footer */
+.rodape_oficina{
+    /* background-color: #3d3d3d; */
+    border: solid red;
+}
+
 .rodape {
     width: 100%;
-    height: 30vh;
+    height: 55vh;
     display: flex;
     flex-direction: column;
     /* Mantenha como coluna para o conteúdo principal */
     align-items: center;
     /* Centraliza o conteúdo */
-    padding: 40px;
+    padding: 10px;
+    border: solid green;
 }
 
 /* Alinhamento dos cards */
@@ -219,8 +201,10 @@ footer>p {
     flex-wrap: wrap;
     /* Permite que os cards quebrem em várias linhas se necessário */
     justify-content: space-between;
-    margin: 20px 0;
+    margin: 10px 0;
     /* Margem para espaçamento vertical */
+    background-color: #272727;
+ 
 }
 
 .card-body-1,
@@ -238,6 +222,7 @@ footer>p {
     /* Cor de fundo suave para melhor visualização */
     border-radius: 10px;
     /* Arredonda os cantos dos cards */
+    color: white;
 }
 
 

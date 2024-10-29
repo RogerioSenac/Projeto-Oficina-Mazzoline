@@ -34,7 +34,7 @@ include("../Projeto-Oficina-Mazzoline/includes/header.php")
             </p>
             <div class="row botoes-servico">
                 <div class="col-3">
-                    <img src="./Assets/img/foto_especializada.jpeg" class="servico-imagem" onclick="mostrarTexto('Manutenção Preventiva e revisão de todos os itens de uso constante, como o sistema de arrefecimento, que é importante para evitar o superaquecimento do motor')" alt="Manutenção_Preventiva">
+                    <img src="./Assets/img/foto_especializada.jpeg" class="servico-imagem" onclick="mostrarTexto('Manutenção preventiva e revisão de todos os itens de uso constante, como o sistema de arrefecimento, que é importante para evitar o superaquecimento do motor')" alt="Manutenção_Preventiva">
                 </div>
                 <div class="col-3">
                     <img src="./Assets/img/oleo.jpg" class="servico-imagem" onclick="mostrarTexto('Trocar o óleo regularmente ajuda a garantir que as partes móveis do motor sejam lubrificadas adequadamente, o que prolonga a vida útil dele e também ajuda a remover impurezas e resíduos que se acumulam no motor.')" alt="Troca_Oleo">
@@ -106,7 +106,7 @@ include("../Projeto-Oficina-Mazzoline/includes/header.php")
 
     <script>
         function mostrarTexto(servico) {
-            document.getElementById('texto').innerText = 'Serviço : ' + servico;
+            document.getElementById('texto').innerText = 'Informação : ' + servico;
             document.getElementById('texto-explativo').style.display = 'block';
         }
 
@@ -119,14 +119,14 @@ include("../Projeto-Oficina-Mazzoline/includes/header.php")
     <!-- Leaflet.js (Mapas) -->
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
     <script>
-        var map = L.map('map').setView([-24.703404269966082, -48.00611380606861], 13);
+        var map = L.map('map').setView([-24.722824671393322, -48.10356176470575], 13);
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
 
-        L.marker([-24.703404269966082, -48.00611380606861]).addTo(map)
-            .bindPopup('Academia Acqua Vida - Jacupiranga<br>Rua Januario Lisboa, 82 - Vila Elias, Jacupiranga - SP')
+        L.marker([-24.722824671393322, -48.10356176470575]).addTo(map)
+            .bindPopup('Mecanica Mazzoline - Cajati <br>Rua Pernambuco, 185 - Jardim Central, Cajati - SP')
             .openPopup();
 
         document.getElementById('tracarRota').addEventListener('click', function() {
@@ -134,7 +134,7 @@ include("../Projeto-Oficina-Mazzoline/includes/header.php")
                 navigator.geolocation.getCurrentPosition(function(position) {
                     var lat = position.coords.latitude;
                     var lon = position.coords.longitude;
-                    var destination = "-24.703404269966082, -48.00611380606861";
+                    var destination = "-24.722824671393322, -48.10356176470575";
                     var url =
                         `https://www.google.com/maps/dir/?api=1&origin=${lat},${lon}&destination=${destination}&travelmode=driving`;
                     window.open(url, '_blank');
