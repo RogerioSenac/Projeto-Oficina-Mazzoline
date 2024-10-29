@@ -271,7 +271,7 @@ nav>a:hover {
 
 .social-icons a:hover {
     background: var(--color);
-    color: black;
+    color: red;
     box-shadow:
         0 0 5px var(--color),
         0 0 25px var(--color),
