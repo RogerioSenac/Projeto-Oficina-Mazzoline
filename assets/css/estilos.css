@@ -226,7 +226,9 @@ nav>a:hover {
     /* box-shadow: 1px 1px 20px yellow; */
 }
 
-.card-group:hover{
+.card-body-1,
+.card-body-2,
+.card-body-3:hover{
     transform: scale(1.05);
     box-shadow: 1px 1px 20px yellow;
 }
