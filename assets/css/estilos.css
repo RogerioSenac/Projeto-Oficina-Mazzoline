@@ -226,11 +226,11 @@ nav>a:hover {
     /* box-shadow: 1px 1px 20px yellow; */
 }
 
-.card-body-1,
-.card-body-2,
+.card-body-1:hover,
+.card-body-2:hover,
 .card-body-3:hover{
     transform: scale(1.05);
-    box-shadow: 1px 1px 20px yellow;
+    filter: drop-shadow(1px 1px 20px rgb(88, 88, 1));
 }
 
 .text-center h3{
