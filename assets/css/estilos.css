@@ -221,8 +221,14 @@ nav>a:hover {
     border-radius: 10px;
     /* Arredonda os cantos dos cards */
     color: white;
-    border: 1px solid lightblue;
+    /* border: 1px solid lightblue; */
     margin: 10px; /* Espaçamento externo de 10px entre os cards */
+    /* box-shadow: 1px 1px 20px yellow; */
+}
+
+.card-group:hover{
+    transform: scale(1.05);
+    box-shadow: 1px 1px 20px yellow;
 }
 
 .text-center h3{
