@@ -17,7 +17,7 @@ include("../Projeto-Oficina-Mazzoline/includes/header.php")
 
 <body>
     <section class="container-video-apresenta">
-        <h1>Oficina Mazzoline, sinonimo de Qualidade!</h1>
+        <!-- <h1>Oficina Mazzoline, sinonimo de Qualidade!</h1> -->
         <article class="apresenta">
             <video id="meuVideo" width="640" height="460" controls autoplay muted>
                 <source src="./assets/video/video_01.mp4" type="video/mp4">
