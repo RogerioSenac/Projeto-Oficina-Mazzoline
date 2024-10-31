@@ -15,7 +15,7 @@
     <nav>
         <a href="#">Início</a>
         <a href="#">Sobre nós</a>
-        <a href="#">Serviços</a>
+        <a href="../ordem_servico/ordem.php">Serviços</a>
         <a href="https://www.facebook.com/mecanicamazzoline/photos_by" target="_blank">Galeria</a>
     </nav>
 </body>
