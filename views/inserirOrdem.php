@@ -2,14 +2,14 @@
 include ("conexao.php");
 
 if($_SERVER ["REQUEST_METHOD"] == "POST"){
-    $cliente = $_POST['cliente'];
-    $veiculo = $_POST['veiculo'];
-    $servico = $_POST['servico'];
-    $valor = $_POST['valor'];
+    $data = $_POST['data_criacao'];
+    $hora = $_POST['hora_criacao'];
+    $descricao = $_POST['descricao'];
     
-    $novaOrdem = $conexao->prepare("INSERT INTO ordem_servico (cliente,veiculo,servico,valor) VALUES (?,?,?,?)");
+    
+    $novaOrdem = $conexao->prepare("INSERT INTO ordem_servico (data_criacao,hora_criacao, descricao) VALUES (?,?,?)");
 
-    $novaOrdem->execute([$cliente,$veiculo,$servico,$valor]);
+    $novaOrdem->execute([$data,$hora,$descricao,]);
 
     header('Location: ordem.php');
 }
