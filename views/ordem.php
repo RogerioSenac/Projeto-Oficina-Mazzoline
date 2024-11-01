@@ -1,5 +1,5 @@
 <?php
-include ("conexao.php");
+include ("../conexao.php");
 
 //Busca as Ordens de Serviços
 $buscaOrdem = $conexao->query("SELECT * from ordem_servico ORDER BY data_criacao DESC");

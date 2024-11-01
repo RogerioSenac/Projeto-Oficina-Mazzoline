@@ -323,3 +323,11 @@ span {
     color: #ff8400;
     font-weight: bold;
 }
+
+/* Controles Ordem de Serviços */
+
+.etiqueta h1{
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
