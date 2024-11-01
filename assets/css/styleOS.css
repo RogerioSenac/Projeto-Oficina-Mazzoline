@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(75, 75, 75);
+}
+
+/*tela ce acesso geral Ordem Serviço*/
+.etiqueta{
+    text-align: center; /*alinhamento do texto*/
+    padding-top: 50px; /* espaçamento do teto*/
+    padding-bottom: 50px; /*espaçamento do footer*/
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 1px 1px 20px white
+}
