@@ -25,54 +25,66 @@ include("../includes/headerbd.php")
     <div class="container">
         <div class="row">
             <!-- Card 1 -->
-            <div class="col-md-3 mb-3">
+            <div class="col-md-5 mb-3">
                 <div class="card text-center">
+                <img class="card-img-top" src="../assets/img/cliente.png">
                     <div class="card-body">
-                        <i class="fa-xl fa-solid fa-circle-user"></i>
-                        <h5 class="card-title">Clientes</h5>
-                        <p class="card-text">Registros</p>
-                        <a href="../views/DashAcessoCliente.php" class="btn btn-primary">Acessar</a>
+                        <!-- <i class="fa-xl fa-solid fa-people-carry-box"></i> -->
+                        <h2 class="card-text">Clientes.</h2>
+                        <a href="./views/cadAluno.php" class="btn btn-success">Cadastrar</a>
+                        <a href="./views/listAluno.php" class="btn btn-success">Consultar</a>
+                        <a href="./views/listAluno.php" class="btn btn-success">Alterar</a>
+                        <a href="./views/listAluno.php" class="btn btn-danger">Cancelar</a>
                     </div>
                 </div>
             </div>
 
             <!-- Card 2 -->
-            <div class="col-md-3 mb-3">
+            <div class="col-md-5 mb-3">
                 <div class="card text-center">
+                    <img class="card-img-top" src="../assets/img/entregador.jpg">
                     <div class="card-body">
-                        <i class="fa-xl fa-solid fa-people-carry-box"></i>
-                        <h5 class="card-title">Fornecedores</h5>
-                        <p class="card-text">Registros</p>
-                        <a href="../views/DashAcessoFornecedor.php" class="btn btn-primary">Acessar</a>
+                        <!-- <i class="fa-xl fa-solid fa-people-carry-box"></i> -->
+                        <h2 class="card-title">Fornecedores</h2>
+                        <a href="./views/cadAluno.php" class="btn btn-success">Cadastrar</a>
+                        <a href="./views/listAluno.php" class="btn btn-success">Consultar</a>
+                        <a href="./views/listAluno.php" class="btn btn-success">Alterar</a>
+                        <a href="./views/listAluno.php" class="btn btn-danger">Cancelar</a>
                     </div>
                 </div>
             </div>
 
             <!-- Card 3 -->
-            <div class="col-md-3 mb-3">
+            <div class="col-md-5 mb-3">
                 <div class="card text-center">
+                    <img class="card-img-top" src="../assets/img/checklist.jpg">
                     <div class="card-body">
-                        <i class="fa-xl fa-solid fa-clipboard-list"></i>
-                        <h5 class="card-title">Ordem Serviço</h5>
-                        <p class="card-text">Registros</p>
-                        <a href="../views/DashAcessoOrdem_Servico.php" class="btn btn-primary">Acessar</a>
+                        <!-- <i class="fa-xl fa-solid fa-clipboard-list"></i> -->
+                        <h2 class="card-title">Ordem Serviço</h2>
+                        <a href="./views/cadAluno.php" class="btn btn-success">Cadastrar</a>
+                        <a href="./views/listAluno.php" class="btn btn-success">Consultar</a>
+                        <a href="./views/listAluno.php" class="btn btn-success">Alterar</a>
+                        <a href="./views/listAluno.php" class="btn btn-danger">Cancelar</a>
                     </div>
                 </div>
             </div>
 
             <!-- Card 4 -->
-            <div class="col-md-3 mb-3">
+            <div class="col-md-5 mb-3">
                 <div class="card text-center">
+                    <img class="card-img-top" src="../assets/img/servico.jpg">
                     <div class="card-body">
-                        <i class="fa-xl fa-sharp-duotone fa-solid fa-gears"></i>
-                        <h5 class="card-title">Produtos / Serviços</h5>
-                        <p class="card-text">Registro.</p>
-                        <a href="../views/DashAcessoProd_Serv.php" class="btn btn-primary">Acessar</a>
+                        <!-- <i class="fa-xl fa-sharp-duotone fa-solid fa-gears"></i> -->
+                        <h2 class="card-title">Produtos / Serviços</h2>
+                        <a href="./views/cadAluno.php" class="btn btn-success">Cadastrar</a>
+                        <a href="./views/listAluno.php" class="btn btn-success">Consultar</a>
+                        <a href="./views/listAluno.php" class="btn btn-success">Alterar</a>
+                        <a href="./views/listAluno.php" class="btn btn-danger">Cancelar</a>
                     </div>
                 </div>
             </div>
         </div>
-        <a href="../views/DashAcessoGeral.php" class="btn btn-secondary">Voltar</a>
+        <a href="../views/DashAcessoGeral.php" class="btn btn-info">Voltar</a>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

@@ -59,7 +59,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    border: 1px solid rgb(73, 73, 73);
+    border: 1px solid #494949;
     border-radius: 50px;
     padding: 10px 60px;
     color: white;
