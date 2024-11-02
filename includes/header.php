@@ -16,7 +16,7 @@
         <a href="#">Início</a>
         <a href="#">Sobre nós</a>
         <a href="https://www.facebook.com/mecanicamazzoline/photos_by" target="_blank">Galeria</a>
-        <a href="./senha/DashAcesso.php">Login</a>
+        <a href="./senha/login.php">Login</a>
     </nav>
 </body>
 

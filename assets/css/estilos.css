@@ -16,6 +16,13 @@ header {
     padding: 20px 0;
 }
 
+.container-fluid h3{
+    color: white;
+}
+
+h1, h2{
+    color: white;
+}
 .container-logo {
     display: flex;
     align-items: center;

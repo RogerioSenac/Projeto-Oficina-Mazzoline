@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
 
     if ($user && password_verify($senha, $user['senhaUsuario'])) {
         $_SESSION['usuario'] = $user['usuario'];
-
+        
         // Redireciona com base no tipo de usuário
         if ($user['usuario'] === 'admin') {
             header("Location: ../views/DashAcessoGeral.php");
@@ -75,66 +75,30 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['cadastro'])) {
 
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Mecanica Mazzoline</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/estilos.css">
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <h3>Mecanica Mazzoline</h3>
-            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button> -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.php">Início</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
     <h1>Login</h1>
     <?php if (isset($_GET['error'])): ?>
         <div><?php echo htmlspecialchars($_GET['error']); ?></div>
     <?php endif; ?>
-
+    
     <form action="login.php" method="post">
-        <div class="mb-3">
-            <label for="usuario" class="form-label">Usuário:</label>
-            <input type="text" name="usuario" required>
-        </div>
-        <div class="mb-3">
-            <label for="senhaUsuario" class="form-label">Senha:</label>
-            <input type="password" name="senhaUsuario" required>
-        </div>
+        <input type="text" name="usuario" placeholder="Usuário" required>
+        <input type="password" name="senhaUsuario" placeholder="Senha" required>
         <button type="submit" name="login">Entrar</button>
     </form>
 
-
-    <!-- Registration Form -->
-
     <h2>Cadastro</h2>
     <form action="login.php" method="post">
-        <div>
-            <label for="nomeCompleto" class="form-label">Nome Completo:</label>
-            <input type="text" name="nomeCompleto" required>
-        </div>
+        <input type="text" name="nomeCompleto" placeholder="Nome Completo" required>
         <input type="email" name="email" placeholder="E-mail" required>
         <input type="text" name="usuario" placeholder="Usuário" required>
         <input type="password" name="senha" placeholder="Senha" required>
         <button type="submit" name="cadastro">Cadastrar</button>
     </form>
-
-
 </body>
-
 </html>
