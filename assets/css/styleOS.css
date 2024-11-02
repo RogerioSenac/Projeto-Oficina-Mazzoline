@@ -1,17 +1,25 @@
 body{
-    background-color: rgb(75, 75, 75);
+    background-color: rgb(86, 86, 206);
+    /* background-color: rgb(75, 75, 75); */
 }
 
 /*tela ce acesso geral Ordem Serviço*/
 .etiqueta{
     text-align: center; /*alinhamento do texto*/
-    padding-top: 50px; /* espaçamento do teto*/5
+    padding-top: 50px; /* espaçamento do teto*/
     padding-bottom: 50px; /*espaçamento do footer*/
 }
 
+.etiqueta h1{
+    color: rgb(255, 167, 2);    
+}
+
 .card{
-    background-color: black;
-    color: white;
+    justify-content: center;
+    background-color: rgba(228, 162, 39, 0.904);
+    color: rgb(57, 57, 204);
+  
+    margin: 20px;
 }
 
 .card:hover{
@@ -26,5 +34,6 @@ body{
     align-self: center;
     height: 100px;
     width: 100px;
+    border-radius: 50px;
 }
     
