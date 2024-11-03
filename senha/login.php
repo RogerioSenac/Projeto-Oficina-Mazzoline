@@ -116,7 +116,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['cadastro'])) {
             <label for="senhaUsuario" class="form-label">Senha:</label>
             <input type="password" name="senhaUsuario" required>
         </div>
-        <button type="submit" name="login">Entrar</button>
+        <div class="d-grid">
+            <button type="submit" class="btn btn-primary">Logar</button>
+        </div>
     </form>
 
 
@@ -124,15 +126,25 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['cadastro'])) {
 
     <h2>Cadastro</h2>
     <form action="login.php" method="post">
-        <div>
+        <div class="mb-3">
             <label for="nomeCompleto" class="form-label">Nome Completo:</label>
             <input type="text" name="nomeCompleto" required>
         </div>
-        <input type="email" name="email" placeholder="E-mail" required>
-        <input type="text" name="usuario" placeholder="Usuário" required>
-        <input type="password" name="senha" placeholder="Senha" required>
-        <button type="submit" name="cadastro">Cadastrar</button>
-    </form>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" name="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="usuario" class="form-label">Usuário:</label>
+            <input type="text" name="usuario" required>
+        </div>
+        <div class="mb-3">
+            <label for="senha" class="form-label">Senha:</label>
+            <input type="password" name="senha" required>
+        </div>
+        <div class="d-grid">
+            <button type="submit" class="btn btn-success">Cadastrar</button>
+        </div>
 
 
 </body>
