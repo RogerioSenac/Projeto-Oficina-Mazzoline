@@ -318,7 +318,6 @@ nav>a:hover {
     font-size: 2rem;
 }
 
-
 .designby a {
     text-align: center;
     text-decoration: none;
@@ -337,4 +336,12 @@ span {
     text-align: center;
     color: white;
     padding: 20px;
+}
+
+#loginform {
+    color: white;
+}
+
+.text-center p{
+    color: white;
 }
