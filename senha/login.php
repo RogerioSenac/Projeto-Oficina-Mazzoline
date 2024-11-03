@@ -102,51 +102,79 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['cadastro'])) {
         </div>
     </nav>
 
-    <h1>Login</h1>
-    <?php if (isset($_GET['error'])): ?>
-        <div><?php echo htmlspecialchars($_GET['error']); ?></div>
-    <?php endif; ?>
-
-    <form action="login.php" method="post">
-        <div class="mb-3">
-            <label for="usuario" class="form-label">Usuário:</label>
-            <input type="text" name="usuario" required>
-        </div>
-        <div class="mb-3">
-            <label for="senhaUsuario" class="form-label">Senha:</label>
-            <input type="password" name="senhaUsuario" required>
-        </div>
-        <div class="d-grid">
-            <button type="submit" class="btn btn-primary">Logar</button>
-        </div>
-    </form>
-
-
-    <!-- Registration Form -->
-
-    <h2>Cadastro</h2>
-    <form action="login.php" method="post">
-        <div class="mb-3">
-            <label for="nomeCompleto" class="form-label">Nome Completo:</label>
-            <input type="text" name="nomeCompleto" required>
-        </div>
-        <div class="mb-3">
-            <label for="email" class="form-label">Email:</label>
-            <input type="email" name="email" required>
-        </div>
-        <div class="mb-3">
-            <label for="usuario" class="form-label">Usuário:</label>
-            <input type="text" name="usuario" required>
-        </div>
-        <div class="mb-3">
-            <label for="senha" class="form-label">Senha:</label>
-            <input type="password" name="senha" required>
-        </div>
-        <div class="d-grid">
-            <button type="submit" class="btn btn-success">Cadastrar</button>
+    <div class="container mt-5">
+        <div class="text-center mb-5">
+            <h1>Bem-vindo a Mecanica Mazoline</h1>
+            <p class="lead"><span class="alerta">A Vida </span>é feita de escolhas e nós....</p>
+            <p class="lead">nós escolhemos <span class="alerta">ACELERAR!</span></p>
         </div>
 
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <!-- Verifica se há uma mensagem de erro -->
+                <?php if (isset($_GET['error']) && $_GET['error'] == 'invalid_credentials'): ?>
+                    <div class="alert alert-danger text-center" role="alert">
+                        Usuário ou senha incorretos. Por favor, tente novamente.
+                    </div>
+                <?php endif; ?>
 
+                <!--Login Form-->
+                <div id="loginform">
+                    <h2 class="text-center">Login</h2>
+
+                    <?php if (isset($_GET['error'])): ?>
+                        <div><?php echo htmlspecialchars($_GET['error']); ?></div>
+                    <?php endif; ?>
+
+                    <form action="login.php" method="post">
+                        <div class="mb-3">
+                            <label for="usuario" class="form-label">Usuário:</label>
+                            <input type="text" name="usuario" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="senhaUsuario" class="form-label">Senha:</label>
+                            <input type="password" name="senhaUsuario" required>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Logar</button>
+                        </div>
+                    </form>
+                    <div class="text-center mt-3">
+                        <a href="#" onclick="toggleForms()">Não tem uma conta? Cadastre-se</a>
+                    </div>
+                </div>
+
+                <!-- Registration Form -->
+                <!-- <div id="registrationForm" style="display:none;"> -->
+                    <h2 class="text-center">Cadastro</h2>
+                    <form action="login.php" method="post">
+                        <div class="mb-3">
+                            <label for="nomeCompleto" class="form-label">Nome Completo:</label>
+                            <input type="text" name="nomeCompleto" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="usuario" class="form-label">Usuário:</label>
+                            <input type="text" name="usuario" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="senha" class="form-label">Senha:</label>
+                            <input type="password" name="senha" required>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-success">Cadastrar</button>
+                        </div>
+                    </form>
+                    <div class="text-center mt-3">
+                        <a href="#" onclick="toggleForms()">Já tem uma conta? Logar</a>
+                    </div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
