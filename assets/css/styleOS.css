@@ -36,4 +36,13 @@ body{
     width: 100px;
     border-radius: 50px;
 }
+
+.container{
+    background-color: rgb(86, 86, 206);
+    color: white;
+}
+
+.container h1{
+    text-align: center;
+}
     

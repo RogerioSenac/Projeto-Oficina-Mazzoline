@@ -31,7 +31,7 @@ include("../includes/headerbd.php")
                     <div class="card-body">
                         <!-- <i class="fa-xl fa-solid fa-people-carry-box"></i> -->
                         <h2 class="card-text">Clientes.</h2>
-                        <a href="./views/cadAluno.php" class="btn btn-success">Cadastrar</a>
+                        <a href="cadCliente.php" class="btn btn-success">Cadastrar</a>
                         <a href="./views/listAluno.php" class="btn btn-success">Consultar</a>
                         <a href="./views/listAluno.php" class="btn btn-success">Alterar</a>
                         <a href="./views/listAluno.php" class="btn btn-danger">Cancelar</a>
